@@ -1,0 +1,53 @@
+$ui-border-color: #e2e4e7;
+$ui-tabs-border-radius: 6px;
+
+/* Headings Tabs */
+.sgf-headings-tabs {
+    .components-tab-panel__tabs {
+        display: inline-block;
+        width: 100%;
+        border: 1px solid $ui-border-color;
+        margin: 1em 0;
+        border-radius: $ui-tabs-border-radius;
+        box-shadow: 0 2px 0px rgba(0,0,0,.05);
+
+        & > button {
+            float: left;
+            width: 16.6666667%;
+            background-color: white;
+            border: none;
+            border-right: 1px solid $ui-border-color;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            color: #727272;
+            padding: 1em 0;
+            text-align: center;
+            cursor: pointer;
+
+            &:last-child {
+                border-right: none;
+                border-top-right-radius: $ui-tabs-border-radius;
+                border-bottom-right-radius: $ui-tabs-border-radius;
+            }
+
+            &:first-child {
+                border-top-left-radius: $ui-tabs-border-radius;
+                border-bottom-left-radius: $ui-tabs-border-radius;
+            }
+
+            &.active-tab {
+                background-color: #efefef;
+                color: #111;
+            }
+        }
+    }
+}
+
+/* Global stuff */
+.sgf-globally-warning, .sgf-information-notice {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+/*# sourceMappingURL=plugin.bundle.css.map*/
